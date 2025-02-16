@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gra w węża</title>
+  <style>
+  canvas {
+      border: 2px solid black;
+      margin: 20px auto;
+      display: block;
+    }
+    #score {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    #game-over {
+      text-align: center;
+      font-size: 30px;
+      color: red;
+      display: none;  /* Na początku ukrywamy */
+    }
+    #restart-btn {
+      display: none;  /* Na początku ukrywamy przycisk */
+      margin: 0 auto;
+      display: block;
+      font-size: 18px;
+      padding: 10px;
+      background-color: lightgreen;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    
+    <canvas 
+      id="gameCanvas" width="400" height="400">
+    </canvas>
+    <div id="score">
+        Wynik: 0
+    </div>
+    <div id="game-over">
+        Game Over!
+    </div>
+    <button id="restart-btn" onclick="restartGame()">
+        Restart
+    </button>
+
+
+  <script src="java.js"></script>
+</body>
+</html>
